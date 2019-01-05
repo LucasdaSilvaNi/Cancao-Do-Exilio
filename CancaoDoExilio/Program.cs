@@ -12,9 +12,11 @@ namespace CancaoDoExilio
         {
             Terra minhaTerra = new Terra();
             Console.WriteLine(GerarPrimeiraEstrofe(minhaTerra));
-            Console.WriteLine(GerarPrimeiraEstrofe(minhaTerra));
+            Console.WriteLine(GerarSegundaEstrofe(minhaTerra));
             Console.WriteLine(GerarTerceiraEstrofe(minhaTerra));
             Console.WriteLine(GerarQuartaEstrofe(minhaTerra));
+            Console.WriteLine(GerarQuintaEstrofe(minhaTerra));
+            Console.ReadKey();
         }
 
         static string GerarPrimeiraEstrofe(Terra minhaTerra)
@@ -59,7 +61,7 @@ namespace CancaoDoExilio
         {
             StringBuilder estrofe = new StringBuilder("Nosso céu ");
 
-            string temMais = minhaTerra.ObterQuantidadeCoisas() == 32.2 ? "têm mais " : "não têm mais ";
+            string temMais = minhaTerra.ObterQuantidadeCoisas() == 32 ? "têm mais " : "não têm mais ";
 
             estrofe.Append(temMais);
             estrofe.Append("estrelas,\nNossas várzeas ");
@@ -73,7 +75,7 @@ namespace CancaoDoExilio
 
         static string GerarTerceiraEstrofe(Terra minhaTerra)
         {
-            string texto = "  ";
+            string texto = "";
 
             StringBuilder estrofe = new StringBuilder();
 
@@ -115,15 +117,11 @@ namespace CancaoDoExilio
                 "Onde canta o Sabiá."
             };
 
-            do
-            {
                 for (int i = 0; i < frases.Count; i++)
                 {
                     estrofe.Append(frases[i]);
                 }
                 estrofe.Append("\n");
-            }
-            while (frases.Count > 0 || frases != null);
 
             return estrofe.ToString();
 
@@ -134,7 +132,7 @@ namespace CancaoDoExilio
             StringBuilder estrofe = new StringBuilder("Não permita Deus que eu morra,\n");
 
             Ave ave = new Ave();
-            PreencherAve(ave);
+            PreencherAve(ref ave);
 
             if(ave.TipoAsas == "Grandes")
             {
@@ -183,7 +181,7 @@ namespace CancaoDoExilio
             return estrofe.ToString();
         }
 
-        static void PreencherAve(Ave ave)
+        static void PreencherAve(ref Ave ave)
         {
             ave = new Ave();
             ave.TipoAsas = "Grandes";

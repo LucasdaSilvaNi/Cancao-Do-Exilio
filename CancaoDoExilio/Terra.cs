@@ -22,15 +22,17 @@ namespace CancaoDoExilio
             aves.Add(new Ave());
         }
 
+        private bool terminou;
+
         public bool Terminou
         {
             get
             {
-                return Terminou;
+                return terminou;
             }
             set
             {
-                Terminou = value;
+                terminou = value;
             }
         }
 
@@ -43,7 +45,7 @@ namespace CancaoDoExilio
                 teste = teste + 1.54;
             }
 
-            return teste;
+            return Math.Floor(teste);
         }
 
         public bool ObterPrimores()
