@@ -21,7 +21,7 @@ namespace CancaoDoExilio
 
         static string GerarPrimeiraEstrofe(Terra minhaTerra)
         {
-            StringBuilder estrofe = new StringBuilder("Minha Terra ");
+            StringBuilder estrofe = new StringBuilder("\"Minha Terra ");
 
             if(minhaTerra.palmeiras.Length > 0)
             {
@@ -51,7 +51,7 @@ namespace CancaoDoExilio
             }
             else
             {
-                estrofe.Append("Aqui não tem aves que gorjeiam.\n\n");
+                estrofe.Append("Aqui não tem aves que gorjeiam.\n");
             }
 
             return estrofe.ToString();
@@ -63,12 +63,12 @@ namespace CancaoDoExilio
 
             string temMais = minhaTerra.ObterQuantidadeCoisas() == 32 ? "têm mais " : "não têm mais ";
 
-            estrofe.Append(temMais);
+            estrofe.Append(temMais.Replace("ê","e"));
             estrofe.Append("estrelas,\nNossas várzeas ");
             estrofe.Append(temMais);
             estrofe.Append("flores,\nNossos bosques ");
             estrofe.Append(temMais);
-            estrofe.Append("vida,\nNossa vida mais amores.\n\n");
+            estrofe.Append("vida,\nNossa vida mais amores.\n");
 
             return estrofe.ToString();
         }
@@ -82,8 +82,7 @@ namespace CancaoDoExilio
 
             if (string.IsNullOrEmpty(texto))
             {
-                estrofe.Append(@"Em cismar, sozinho, à noite,Mais prazer encontro eu lá;\n
-                                                        Minha terra tem palmeiras,\nOnde canta o Sabiá.\n\n");
+                estrofe.Append("Em cismar, sozinho, à noite,\nMais prazer encontro eu lá;\nMinha terra tem palmeiras,\nOnde canta o Sabiá.\n");
             }
             else
             {
@@ -111,7 +110,7 @@ namespace CancaoDoExilio
             List<string> frases = new List<string>()
             {
                 "Que tais não encontro eu cá;",
-                "Em cismar — sozinho, à noite —",
+                "Em cismar — sozinho, à noite,",
                 "Mais prazer encontro eu lá;",
                 "Minha terra tem palmeiras,",
                 "Onde canta o Sabiá."
@@ -120,8 +119,8 @@ namespace CancaoDoExilio
                 for (int i = 0; i < frases.Count; i++)
                 {
                     estrofe.Append(frases[i]);
+                    estrofe.Append("\n");
                 }
-                estrofe.Append("\n");
 
             return estrofe.ToString();
 
@@ -174,7 +173,7 @@ namespace CancaoDoExilio
                 estrofe.Append("Não avistei palmeiras;\n");
             }
 
-            estrofe.Append("Onde canta o Sabiá.");
+            estrofe.Append("Onde canta o Sabiá.\"");
 
             minhaTerra.Terminou = true;
 

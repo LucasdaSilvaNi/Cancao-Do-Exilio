@@ -53,7 +53,7 @@ namespace CancaoDoExilio
             int x = 20;
             int y = 10;
 
-            return y == 20 && x == 10;
+            return x == 20 && y == 10;
         }
     }
 }
