@@ -32,7 +32,7 @@ namespace CancaoDoExilio
 
             estrofe.Append("palmeiras,\nOnde ");
 
-            if(Convert.ToBoolean(minhaTerra.sabiaCanta))
+            if(minhaTerra.sabiaCanta)
             {
                 estrofe.Append("canta ");
             }

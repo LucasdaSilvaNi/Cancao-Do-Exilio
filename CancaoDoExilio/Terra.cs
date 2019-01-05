@@ -8,13 +8,19 @@ namespace CancaoDoExilio
 {
     public class Terra
     {
-        public int QuantidadePalmeirasAvistadas = 7;
+        public int QuantidadePalmeirasAvistadas = 1;
 
-        public string sabiaCanta = "Sim";
+        public bool sabiaCanta = true;
 
         public Palmeira[] palmeiras;
 
         public List<Ave> aves;
+
+        public Terra() {
+            palmeiras = new Palmeira[2];
+            aves = new List<Ave>();
+            aves.Add(new Ave());
+        }
 
         public bool Terminou
         {
