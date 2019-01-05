@@ -15,6 +15,7 @@ namespace CancaoDoExilio
         }
 
         public int gorjeio;
+        private string nome;
 
         public void AlterarNome(string nome)
         {

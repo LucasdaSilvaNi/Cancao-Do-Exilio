@@ -7,3 +7,13 @@ C:\teste2\CancaoDoExilio\CancaoDoExilio\obj\Debug\CancaoDoExilio.exe
 C:\teste2\CancaoDoExilio\CancaoDoExilio\obj\Debug\CancaoDoExilio.pdb
 C:\teste2\CancaoDoExilio\CancaoDoExilio\bin\Debug\Util.dll
 C:\teste2\CancaoDoExilio\CancaoDoExilio\bin\Debug\Util.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\bin\Debug\CancaoDoExilio.exe.config
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\bin\Debug\CancaoDoExilio.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\bin\Debug\CancaoDoExilio.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\bin\Debug\Util.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\bin\Debug\Util.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\obj\Debug\CancaoDoExilio.csprojAssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\obj\Debug\CancaoDoExilio.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\obj\Debug\CancaoDoExilio.csproj.CopyComplete
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\obj\Debug\CancaoDoExilio.exe
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\CancaoDoExilio\obj\Debug\CancaoDoExilio.pdb

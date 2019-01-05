@@ -12,7 +12,7 @@ namespace CancaoDoExilio
 
         public string sabiaCanta = "Sim";
 
-        protected Palmeira[] palmeiras;
+        public Palmeira[] palmeiras;
 
         public List<Ave> aves;
 

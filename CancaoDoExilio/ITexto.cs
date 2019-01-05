@@ -9,8 +9,6 @@ namespace CancaoDoExilio
 {
     public interface ITexto
     {
-        public bool TextoGerado;
-
         string GerarTexto();
     }
 }

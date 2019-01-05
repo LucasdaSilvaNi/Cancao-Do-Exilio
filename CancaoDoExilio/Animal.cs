@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CancaoDoExilio
 {
-    public sealed class Animal
+    public class Animal
     {
         private string nome;
 

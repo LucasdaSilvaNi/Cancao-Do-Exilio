@@ -9,9 +9,9 @@ namespace CancaoDoExilio
 {
     public class Texto : ITexto
     {
-        public int GerarTexto()
+        public string GerarTexto()
         {
-            return Util.GerarTexto();
+            return Util.Util.GerarTexto();
         }
 
         string ITexto.GerarTexto()

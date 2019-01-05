@@ -3,3 +3,9 @@ C:\teste2\CancaoDoExilio\Util\bin\Debug\Util.pdb
 C:\teste2\CancaoDoExilio\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
 C:\teste2\CancaoDoExilio\Util\obj\Debug\Util.dll
 C:\teste2\CancaoDoExilio\Util\obj\Debug\Util.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\bin\Debug\Util.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\bin\Debug\Util.pdb
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\obj\Debug\Util.csprojAssemblyReference.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\obj\Debug\Util.csproj.CoreCompileInputs.cache
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\obj\Debug\Util.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\CancaoDoExilio - Programa\Util\obj\Debug\Util.pdb

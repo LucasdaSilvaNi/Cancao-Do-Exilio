@@ -10,5 +10,7 @@ namespace CancaoDoExilio
     {
         public string folha;
 
+        public override void Crescer() { }
+
     }
 }
