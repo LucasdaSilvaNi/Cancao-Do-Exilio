@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CancaoDoExilio
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -19,7 +19,7 @@ namespace CancaoDoExilio
             Console.ReadKey();
         }
 
-        static string GerarPrimeiraEstrofe(Terra minhaTerra)
+        public static string GerarPrimeiraEstrofe(Terra minhaTerra, bool web = false)
         {
             StringBuilder estrofe = new StringBuilder("\"Minha Terra ");
 
@@ -54,10 +54,13 @@ namespace CancaoDoExilio
                 estrofe.Append("Aqui não tem aves que gorjeiam.\n");
             }
 
-            return estrofe.ToString();
+            if (web) 
+                return paraWeb(estrofe);
+            else
+                return estrofe.ToString();
         }
 
-        static string GerarSegundaEstrofe(Terra minhaTerra)
+        public static string GerarSegundaEstrofe(Terra minhaTerra, bool web = false)
         {
             StringBuilder estrofe = new StringBuilder("Nosso céu ");
 
@@ -70,10 +73,13 @@ namespace CancaoDoExilio
             estrofe.Append(temMais);
             estrofe.Append("vida,\nNossa vida mais amores.\n");
 
-            return estrofe.ToString();
+            if (web)
+                return paraWeb(estrofe);
+            else
+                return estrofe.ToString();
         }
 
-        static string GerarTerceiraEstrofe(Terra minhaTerra)
+        public static string GerarTerceiraEstrofe(Terra minhaTerra, bool web = false)
         {
             string texto = "";
 
@@ -89,10 +95,13 @@ namespace CancaoDoExilio
                 estrofe.Append(@"Em cismar, sozinho, à noite,prazer encontro eu lá;\n
                                 Minha terra palmeiras,\nOnde canta a Alcione.\n\n");
             }
-            return estrofe.ToString();
+            if (web)
+                return paraWeb(estrofe);
+            else
+                return estrofe.ToString();
         }
 
-        static string GerarQuartaEstrofe(Terra minhaTerra)
+        public static string GerarQuartaEstrofe(Terra minhaTerra, bool web = false)
         {
             StringBuilder estrofe = new StringBuilder("Minha terra ");
 
@@ -122,11 +131,14 @@ namespace CancaoDoExilio
                     estrofe.Append("\n");
                 }
 
-            return estrofe.ToString();
+            if (web)
+                return paraWeb(estrofe);
+            else
+                return estrofe.ToString();
 
         }
 
-        static string GerarQuintaEstrofe(Terra minhaTerra)
+        public static string GerarQuintaEstrofe(Terra minhaTerra, bool web = false)
         {
             StringBuilder estrofe = new StringBuilder("Não permita Deus que eu morra,\n");
 
@@ -177,7 +189,10 @@ namespace CancaoDoExilio
 
             minhaTerra.Terminou = true;
 
-            return estrofe.ToString();
+            if (web)
+                return paraWeb(estrofe);
+            else
+                return estrofe.ToString();
         }
 
         static void PreencherAve(ref Ave ave)
@@ -190,6 +205,12 @@ namespace CancaoDoExilio
         {
             palmeira = new Palmeira();
             palmeira.folha = "Folha de Palmeira";
+        }
+
+        static string paraWeb(StringBuilder estrofe) {
+            estrofe.Replace("\n", "<br/>");
+            estrofe.Append("<br/><br/>");
+            return estrofe.ToString();
         }
     }
 }
