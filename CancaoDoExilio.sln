@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancaoDoExilio", "CancaoDoE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{338B5252-82FD-4E7E-A75E-5B7304EB4826}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancaoDoExilioWeb", "CancaoDoExilioWeb\CancaoDoExilioWeb.csproj", "{A707F3A6-21CF-470C-ADC5-06E371BE2F0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{338B5252-82FD-4E7E-A75E-5B7304EB4826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{338B5252-82FD-4E7E-A75E-5B7304EB4826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{338B5252-82FD-4E7E-A75E-5B7304EB4826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A707F3A6-21CF-470C-ADC5-06E371BE2F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A707F3A6-21CF-470C-ADC5-06E371BE2F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A707F3A6-21CF-470C-ADC5-06E371BE2F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A707F3A6-21CF-470C-ADC5-06E371BE2F0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
